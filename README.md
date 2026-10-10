@@ -126,21 +126,6 @@ alpha + beta < 1
 gamma >= 0
 ```
 
-使用程式中的 `inverse_trans_param()`，將初始 `alpha`、`beta` 轉為最佳化參數：
-
-```python
-raw_total, raw_share = inverse_trans_param(1, alpha, beta)
-
-init_params = (
-    mu,
-    h1,
-    raw_total,
-    raw_share,
-    omega,
-    gamma
-)
-```
-
 ## 注意事項
 
 - 本版本限制 `gamma >= 0`，只估計外生變數正值部分增加變異數的效果。
